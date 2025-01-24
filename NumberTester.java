@@ -21,5 +21,8 @@ public class NumberTester
 
 		Number num2 = new Number(8);
 		System.out.println(num2);
+
+		myNum.setNumber(12);
+		System.out.println(myNum);
 	}
 }

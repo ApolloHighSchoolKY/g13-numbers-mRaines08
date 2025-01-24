@@ -12,6 +12,7 @@ public class Number
 	//Default Constructor
 	public Number()
 	{
+		//autoboxing - primative int converts to Interger
 		number=0;
 	}
 
@@ -35,12 +36,12 @@ public class Number
 	public boolean isOdd()
 	{
 		//If the number is odd, return true
-		return (getNumber() % 2 == 1);
+		return getNumber() % 2 == 1;
 	}
 
 	public boolean isPerfect()
 	{
-		int total=0;
+		int total = 0;
 
 		//A perfect number is any number equal to the sum of its divisors
 		//excluding itself.
@@ -48,7 +49,7 @@ public class Number
 			if(getNumber() % i == 0)
 				total += i;
 
-		return (number==total);
+		return (number == total);
 	}
 
 	public String toString( )
@@ -60,6 +61,7 @@ public class Number
 		returnString += number + " isOdd == " + isOdd() + "\n";
 		returnString += number + " isPerfect == " + isPerfect() + "\n\n";
 
-		return "" + returnString;
+		//return "" + returnString;
+		return "" + number;
 	}
 }
